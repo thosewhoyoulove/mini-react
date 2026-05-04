@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "baseUrl": ".",
+    "paths": {
+      "mini-react/jsx-runtime": ["./packages/react/jsx-runtime.ts"],
+      "mini-react/jsx-dev-runtime": ["./packages/react/jsx-runtime.ts"],
+      "react": ["./packages/react/index.ts"],
+      "react/jsx-runtime": ["./packages/react/jsx-runtime.ts"],
+      "react/jsx-dev-runtime": ["./packages/react/jsx-runtime.ts"],
+      "react-dom/client": ["./packages/react-dom/client.ts"],
+      "react-dom": ["./packages/react-dom/index.ts"]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  },
+  "include": [
+    "packages/react/**/*.ts",
+    "packages/react-dom/**/*.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "vite.config.ts"
+  ]
+}
